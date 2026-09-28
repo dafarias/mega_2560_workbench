@@ -15,3 +15,6 @@ build/
 
 # ...but keep the root desktop C++ debug config
 !/.vscode/launch.json
+
+# PlatformIO generates a .gitignore in each sub-project; the root rules above already cover it
+/*/.gitignore

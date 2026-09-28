@@ -1,0 +1,51 @@
+{
+  "permissions": {
+    "blockReadsOutsideWorkingDirectories": true,
+    "disableBypassPermissionsMode": "disable",
+    "allow": [
+      "Bash(pio run)",
+      "Bash(pio run *)",
+      "Bash(platformio run *)",
+      "Bash(pio device list*)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)"
+    ],
+    "ask": [
+      "Bash(pio pkg install*)",
+      "Bash(pio lib install*)",
+      "Bash(git commit*)",
+      "Bash(git push*)",
+      "Edit(platformio.ini)",
+      "Edit(**/platformio.ini)",
+      "Edit(common.ini)"
+    ],
+    "deny": [
+      "Bash(sudo *)",
+      "Bash(rm -rf *)",
+      "Bash(rm -fr *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(* | sh*)",
+      "Bash(* | bash*)",
+      "Bash(* | zsh*)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git reset --hard*)",
+      "Bash(git clean *)",
+      "Bash(npm install -g*)",
+      "Bash(npm i -g*)",
+      "Bash(pip install *)",
+      "Bash(pip3 install *)",
+      "Bash(brew install *)",
+      "Bash(pio pkg install *http*)",
+      "Bash(pio pkg install *git*)",
+      "Bash(chmod 777*)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.gnupg/**)",
+      "Read(**/.env*)",
+      "Read(**/secrets.h)"
+    ]
+  }
+}
